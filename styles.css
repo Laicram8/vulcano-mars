@@ -1,0 +1,108 @@
+/* Basic Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #fff;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header {
+    background: linear-gradient(135deg, #dc143c, #ff8c00); /* Magma-like */
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.nav {
+    background-color: #ff4500; /* Plasma-like */
+    padding: 15px;
+    text-align: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #fff;
+}
+
+.section {
+    padding: 60px 20px;
+}
+
+.academic {
+    background-color: #292929; /* Dark minimalist for Academic */
+}
+
+.consulting {
+    background-color: #800000; /* Rich Magma theme for Consulting */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.content-list {
+    list-style: none;
+}
+
+.content-list li {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8em;
+}
+
+.footer p {
+    margin: 0;
+}
