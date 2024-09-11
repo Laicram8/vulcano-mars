@@ -18,7 +18,7 @@ a {
 }
 
 .header {
-    background: linear-gradient(135deg, #dc143c, #ff8c00); /* Magma-like */
+    background: linear-gradient(135deg, #ff8c00, #ff4500); /* Magma-like */
     padding: 60px 20px;
     text-align: center;
     color: #fff;
@@ -29,6 +29,7 @@ a {
     margin-top: 10px;
 }
 
+/* Navbar styling */
 .nav {
     background-color: #ff4500; /* Plasma-like */
     padding: 15px;
@@ -55,16 +56,17 @@ a {
     color: #fff;
 }
 
+/* Section Backgrounds */
 .section {
     padding: 60px 20px;
 }
 
 .academic {
-    background-color: #292929; /* Dark minimalist for Academic */
+    background: linear-gradient(135deg, rgba(32, 32, 32, 0.9), rgba(255, 99, 71, 0.9), rgba(70, 130, 180, 0.9)); /* Plasma-like nebulosa effect */
 }
 
 .consulting {
-    background-color: #800000; /* Rich Magma theme for Consulting */
+    background: radial-gradient(circle, rgba(255, 69, 0, 0.8), rgba(220, 20, 60, 0.8), rgba(139, 0, 0, 0.8)); /* Magma-like flow */
 }
 
 .container {
@@ -96,6 +98,23 @@ h2 {
     font-size: 1.2em;
 }
 
+.academic-subsections h3 {
+    font-size: 1.8em;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.academic-subsections ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.academic-subsections ul li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* Footer */
 .footer {
     background-color: #000;
     text-align: center;
