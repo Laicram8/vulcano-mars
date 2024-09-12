@@ -1,63 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+/* General page reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(45deg, #ff5f6d, #ffc371); /* Magma and Plasma colors */
-  background-size: 400% 400%;
-  animation: gradientFlow 15s ease infinite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: url('images/nebulosa.webp') no-repeat center center fixed;
+    background-size: cover;
 }
 
-@keyframes gradientFlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.container {
-  text-align: center;
-  color: white;
+.centered {
+    text-align: center;
+    color: white;
 }
 
 h1 {
-  font-size: 4em;
-  letter-spacing: 0.1em;
+    font-size: 6em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
 }
 
 h2 {
-  font-size: 1.5em;
-  margin-bottom: 2em;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.8);
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+.buttons button {
+    padding: 10px 30px;
+    font-size: 1.5em;
+    margin: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.button {
-  padding: 15px 30px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  text-decoration: none;
-  color: white;
-  font-size: 1.2em;
-  font-weight: bold;
-  transition: 0.3s;
+.buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
-.button:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-color: rgba(255, 255, 255, 0.5);
-}
