@@ -1,127 +1,63 @@
-/* Basic Resets */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #1e1e1e;
-    color: #fff;
-    line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #ff5f6d, #ffc371); /* Magma and Plasma colors */
+  background-size: 400% 400%;
+  animation: gradientFlow 15s ease infinite;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.header {
-    background: linear-gradient(135deg, #ff8c00, #ff4500); /* Magma-like */
-    padding: 60px 20px;
-    text-align: center;
-    color: #fff;
-}
-
-.subtitle {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-/* Navbar styling */
-.nav {
-    background-color: #ff4500; /* Plasma-like */
-    padding: 15px;
-    text-align: center;
-}
-
-.nav ul {
-    list-style: none;
-    display: inline-block;
-}
-
-.nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-.nav ul li a {
-    font-size: 1.2em;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.nav ul li a:hover {
-    color: #fff;
-}
-
-/* Section Backgrounds */
-.section {
-    padding: 60px 20px;
-}
-
-.academic {
-    background: linear-gradient(135deg, rgba(32, 32, 32, 0.9), rgba(255, 99, 71, 0.9), rgba(70, 130, 180, 0.9)); /* Plasma-like nebulosa effect */
-}
-
-.consulting {
-    background: radial-gradient(circle, rgba(255, 69, 0, 0.8), rgba(220, 20, 60, 0.8), rgba(139, 0, 0, 0.8)); /* Magma-like flow */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-h1, h2 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  text-align: center;
+  color: white;
 }
 
 h1 {
-    font-size: 3em;
+  font-size: 4em;
+  letter-spacing: 0.1em;
 }
 
 h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.content-list {
-    list-style: none;
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.content-list li {
-    margin-bottom: 15px;
-    font-size: 1.2em;
+.button {
+  padding: 15px 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.academic-subsections h3 {
-    font-size: 1.8em;
-    margin-top: 40px;
-    margin-bottom: 15px;
-}
-
-.academic-subsections ul {
-    list-style: none;
-    margin-bottom: 30px;
-}
-
-.academic-subsections ul li {
-    margin-bottom: 10px;
-    font-size: 1.2em;
-}
-
-/* Footer */
-.footer {
-    background-color: #000;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.8em;
-}
-
-.footer p {
-    margin: 0;
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
 }
