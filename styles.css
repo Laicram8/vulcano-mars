@@ -15,25 +15,27 @@ body {
     font-family: 'Montserrat', sans-serif;
     background: url('images/nebulosa.webp') no-repeat center center fixed;
     background-size: cover;
-    color: white; /* Ensures all text is visible */
+    color: white;
 }
 
 .container {
     text-align: center;
+    max-width: 90%;
+    margin: auto;
 }
 
 h1 {
     font-size: 5em;
     letter-spacing: 0.1em;
     font-weight: bold;
-    color: white; /* Ensures title is white */
-    margin-bottom: 0.5em;
+    color: white;
+    margin-bottom: 0.2em;
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 2em;
     margin-bottom: 2em;
-    color: white; /* Ensures subtitle is white */
+    font-style: italic;
 }
 
 .buttons {
@@ -45,17 +47,13 @@ h2 {
 .buttons a {
     padding: 15px 30px;
     font-size: 1.5em;
-    margin: 10px;
+    margin: 0 20px;
     border: 2px solid white;
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-}
-
-.buttons a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .buttons a:hover {
