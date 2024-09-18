@@ -10,24 +10,32 @@
             padding: 0;
             font-family: Arial, sans-serif;
             height: 100vh;
-            background-image: url('images/academia.webp');
+            background-image: url('images/academia.webp'); /* Ensure the path is correct */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: flex-start;
             align-items: center;
-            color: black;
+            color: black; /* Adjust based on the contrast with the background */
         }
 
         h1 {
             text-align: center;
             font-size: 4em;
+            margin-top: 30px;
             margin-bottom: 50px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds text shadow for better visibility */
         }
 
         .section {
             margin: 40px 0;
+            width: 80%; /* To make sure content is not too wide */
+            max-width: 1200px;
+            background-color: rgba(0, 0, 0, 0.6); /* Add slight background for better readability */
+            padding: 20px;
+            border-radius: 8px;
         }
 
         h2 {
